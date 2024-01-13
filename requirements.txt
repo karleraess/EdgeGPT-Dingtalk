@@ -1,0 +1,3 @@
+dingtalk-stream==0.15.2
+re_edge_gpt==0.0.21
+nest-asyncio==1.5.8
