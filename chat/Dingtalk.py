@@ -22,7 +22,8 @@ async def test_ask(query, incoming_message: ChatbotMessage, handler: dingtalk_st
     try:
         # cookies = json.loads(open(
         #     str(Path(str(Path.cwd()) + "/bing_cookies.json")), encoding="utf-8").read())
-        cookies = json.loads(open("./bing_cookies.json", encoding="utf-8").read())
+        # cookies = json.loads(open("./bing_cookies.json", encoding="utf-8").read())
+        cookies = json.loads(bing_cookies)
         bot = await Chatbot.create(cookies=cookies)
         # print(query)
         response = await bot.ask(
